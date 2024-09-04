@@ -1,0 +1,262 @@
+/* Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(0,0,0, .6), rgba(96, 76, 76, .6)), url("../images/granos_coffee.avif");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content h2 {
+    font-size: 32px;
+    padding: 5px;
+    color: white;
+}
+.content span {
+    color: orange;
+}
+
+.content article {
+    font-size: 22px;
+    color: white;
+}
+.parrafos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.parrafos p{
+    margin: 5vw 10vw;
+}
+/* ==================>>>>>>------calendario-------<<<<<<========================= */
+/* ==================>>>>>>------calendario-------<<<<<<========================= */
+/* ==================>>>>>>------calendario-------<<<<<<========================= */
+.calendario{
+    display: none;
+}
+/* ===========================BLOGS ===================================*/
+/* ===========================BLOGS ===================================*/
+/* ===========================BLOGS ===================================*/
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgba(0,0,0, .6), rgba(96, 76, 76, .6)), url("../images/madera.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    font-size: 7px;
+
+}
+.card{
+    width:37em ;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 1.5em;
+    border-radius:2em  ;
+    margin: 3em;
+    padding-bottom: 2em;
+}
+.card__img{
+    width: 37em;
+    height: 25em;
+    border-radius:2em  ;
+    margin-bottom: 1em;
+
+}
+.card__text{
+    font: normal normal normal 2.5em/normal Arial;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.card__text:hover{
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    opacity: 80%;
+}
+.card__title{
+    font-size:1.2em ;
+    border-bottom: 3px solid var(--color--border);
+    border-top: 3px solid var(--color--border);
+    border-right: 3px solid var(--color--border);
+    border-bottom-right-radius: 0.8em;
+    border-left: 3px solid var(--color--border);
+    border-bottom-left-radius: 0.8em;
+    padding: 0.1em 0.2em;
+}
+.card__p{
+    padding: 0.4em;
+}
+button{
+    font-size: 30px;
+    border-radius: 2em;
+    margin-top:0.8em ;
+    margin-bottom: 0.3em;
+    background-color: #cd9054;
+    
+}
+.button__link{
+    text-decoration: none;
+    padding: 0.1em 0.5em;
+    border-radius:2em ;
+    color: #140f07;
+}
+/* ================>>>>>-----FOOTER-----<<<<<========================== */
+/* ================>>>>>-----FOOTER-----<<<<<========================== */
+/* ================>>>>>-----FOOTER-----<<<<<========================== */
+.footer {
+    background-color: #404040;
+    border-top: 2px solid #333333;
+}
+
+.footer .footer-box {
+    padding: 15px;
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.footer-box .references{
+    display: flex;
+}
+.footer .footer-box .social-media a {
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: .7;
+    transition: .5s all ease-in-out;
+
+}
+
+.footer .footer-box .copyright {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+    color: orange;
+}
+.social-media{
+    list-style: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 0;
+}
+
+.references{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+}
+
+.references a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media (min-width:769px) {
+    .content{
+        display: flex;
+        align-items: start;
+    }
+    .content h2{
+        align-self: center;
+    }
+    .parrafos{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafos p{
+        margin: 5vw 10vw;
+        width: 30vw;
+    }
+    .calendario{
+        display: flex;
+        position: absolute;
+        left: 65vw;
+        align-self: flex-end;
+        width: 30vw;
+        height: 30vw;
+        background-color: transparent;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .calendario img{
+        width: 100%;
+        border-radius: 5%;
+    }
+    #carouselExampleIndicators{
+        width: 100%;
+        height: 100%;
+    }
+
+    .references{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;    
+    }
+
+}
+@media(max-width: 500px) {
+
+    /* =========================================================== */
+
+    /* =========================================================== */
+    .footer .footer-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .footer .footer-box .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .footer .footer-box .copyright {
+        color: white;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .footer .footer-box .brand {
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
+
